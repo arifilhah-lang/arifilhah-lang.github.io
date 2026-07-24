@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+html, body, #root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Safe area for notched phones */
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+}
+
+/* Prevent Pull-to-refresh / rubber-band highlight on touch devices */
+html {
+  overscroll-behavior-y: none;
+}
+
+@theme {
+  --color-brand-900: #03045E;
+  --color-brand-700: #0077B6;
+  --color-brand-500: #00B4D8;
+  --color-brand-300: #90E0EF;
+  --color-brand-100: #CAF0F8;
+
+  --animate-marquee: marquee 40s linear infinite;
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --animate-float: float 6s ease-in-out infinite;
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+/* Mobile touch targets — min 44px recommended */
+@media (max-width: 640px) {
+  button, a[role="button"], a[href] {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Allow long words (like email or urls) to break on small screens */
+.break-words-mobile {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

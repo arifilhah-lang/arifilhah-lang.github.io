@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0077B6" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="description" content="Projukti X — All-in-one ERP & business management software for sales, stock, invoices, and customers." />
+    <title>Projukti X — All-in-One Business Management Software</title>
+
+    <!-- Apple / Android home-screen icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+
+    <!-- Canonical URL — REPLACE with your real live domain -->
+    <link rel="canonical" href="https://projuktix.com/" />
+
+    <!-- Open Graph (Facebook / WhatsApp / Messenger link preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Projukti X" />
+    <meta property="og:title" content="Projukti X — All-in-One Business Management Software" />
+    <meta property="og:description" content="Feel your business's own personal software. Manage sales, stock, invoices, and customers in one place." />
+    <meta property="og:image" content="https://projuktix.com/og-image.png" />
+    <meta property="og:url" content="https://projuktix.com/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projukti X — All-in-One Business Management Software" />
+    <meta name="twitter:description" content="Feel your business's own personal software. Manage sales, stock, invoices, and customers in one place." />
+    <meta name="twitter:image" content="https://projuktix.com/og-image.png" />
+
+    <!-- ============================================================
+         📊 GOOGLE ANALYTICS (GA4) — for tracking visitors + conversions
+         1) Go to analytics.google.com → create a GA4 property
+         2) Copy your Measurement ID (looks like G-XXXXXXXXXX)
+         3) Paste it in BOTH places below (replace G-XXXXXXXXXX)
+         Without this, ad campaigns (Google/Meta) can't measure results.
+         ============================================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- ============================================================
+         📊 META (FACEBOOK) PIXEL — for Facebook/Instagram ad targeting
+         1) Go to business.facebook.com/events_manager → create a Pixel
+         2) Copy your Pixel ID and paste it below (replace YOUR_PIXEL_ID)
+         ============================================================ -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
